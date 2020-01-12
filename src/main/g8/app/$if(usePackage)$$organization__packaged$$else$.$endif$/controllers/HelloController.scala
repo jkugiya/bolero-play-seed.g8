@@ -17,6 +17,6 @@ class HomeController (val controllerComponents: ControllerComponents) extends Ba
    * a path of `/`.
    */
   def index() = Action { implicit request: Request[AnyContent] =>
-    Ok(views.html.index())
+    Ok("ok")
   }
 }

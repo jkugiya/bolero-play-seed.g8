@@ -54,7 +54,7 @@ val MacwireVersion = "2.3.3"
 lazy val root = {
     val proj =
         (project in file("."))
-            .enablePlugins(PlayScala, EcrPlugin, ParadoxPlugin, ParadoxMaterialThemePlugin)
+            .enablePlugins(PlayScala, EcrPlugin, ParadoxPlugin, ParadoxMaterialThemePlugin, Bolero)
             .settings(dockerSettings)
             .settings(ecrSettings)
             .settings(paradoxSettings)
